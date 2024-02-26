@@ -1,0 +1,84 @@
+
+.navbar{
+    background-color: #06060d;
+    width: 100vw;
+    display: grid;
+    grid-template-columns:450px 1100px 350px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    height: 10vh;
+}
+
+.form-country{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 70%;
+    height: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.btn-search{
+    width: 10%;
+    color: white;
+    height: 50%;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+    outline: none;
+}
+
+.continents{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.your-location{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-location{
+    width: 13vw;
+    cursor: pointer;
+    height: 4vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.continent:hover{
+    color: red;
+}
+
+.your-location:active{
+    transform: scale(.98);
+}
+
+.btn-location:hover{
+    background-color: white;
+    color: red;
+}
