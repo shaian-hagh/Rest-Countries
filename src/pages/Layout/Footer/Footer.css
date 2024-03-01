@@ -1,0 +1,30 @@
+.footer{
+    background-color: #06060d;
+    min-height: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.footer span {
+    font-size: 40px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.footer p {
+    position: absolute;
+    top: 10px;
+    font-family: sans-serif;
+}
+
+.footer span:hover {
+    background-color: white;
+    color: rgb(55, 147, 223);
+}

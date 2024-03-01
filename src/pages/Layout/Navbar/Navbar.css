@@ -1,9 +1,7 @@
-
 .navbar{
     background-color: #06060d;
     width: 100vw;
-    display: grid;
-    grid-template-columns:450px 1100px 350px;
+    display: flex;
     align-items: center;
     justify-items: center;
     padding: 10px;
