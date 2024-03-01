@@ -3,7 +3,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     padding: 10px;
     height: 10vh;
 }
