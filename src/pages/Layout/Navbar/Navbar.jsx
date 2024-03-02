@@ -6,12 +6,12 @@ export const Navbar = () => {
     <nav className='navbar'>
       <form className='form-country'>
         <input type="text" className="search" required placeholder="search"/>
-        <button type='submit' className="btn-search"><i class=" fa-solid fa-magnifying-glass"></i></button>
+        <button type='submit' className="btn-search"><i className=" fa-solid fa-magnifying-glass"></i></button>
       </form>
       <select name="" id="">
         <option value="Europe">Europe</option>
         <option value="Asia">Asia</option>
-        <option value="Astralia">Astralia</option>
+        <option value="Australia">Australia</option>
         <option value="Africa">Africa</option>
         <option value="America">America</option>
       </select>
