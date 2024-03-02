@@ -3,13 +3,14 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
     height: 100px;
 }
 
 .form-country{
     background-color: burlywood;
+    /* width: 500px; */
     height: 100%;
     display: flex;
     align-items: center;

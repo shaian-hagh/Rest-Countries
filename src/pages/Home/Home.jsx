@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Country } from './Country/Country';
 import "./Home.css"
@@ -14,20 +15,22 @@ export const Home = () => {
 
     const [info, setInfo] = useState('');
     const goToCountry = (e) => {
-        setInfo(e)
+        setCountries(e)
     }
 
     return(
         <div className="home">
             {
                 countries && countries.map((data, index) => {
-                    return(
-                        <Country data={data} key={index} index={index} goToCountry={goToCountry} />
+                    return (
+                        <Link onClick={() => goToCountry(index)} to={`/CountryInfo/${index+1}`} className="more" key={index}>
+                            <Country data={data} />
+                        </Link>
                     )
                 })
 			}
             {
-                info && <CountryInfo info={info} />
+                info && <CountryInfo countries={countries} />
             }
         </div>
     )

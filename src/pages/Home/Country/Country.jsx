@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"
 import "./Country.css"
-export const Country = ({data, index, goToCountry}) => {
+export const Country = ({data}) => {
 
     return (
     <>
@@ -9,7 +8,6 @@ export const Country = ({data, index, goToCountry}) => {
             alt={data.flags.alt}
             className="country"
         />
-        <Link onClick={() => goToCountry(index)} to='CountryInfo' className="more">More</Link>
     </>
     )
 }
