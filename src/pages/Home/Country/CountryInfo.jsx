@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
-export const CountryInfo = ({countries}) => {
+export const CountryInfo = () => {
 
-    console.log(countries);
+  const [item, setItem] = useState({})
 
-  return (
-    <div>
-        
-    </div>
-  )
+  const params = useParams();
+
+  useEffect(() => {
+      axios.get(`https://restcountries.com/v3.1/name/${params.id}`)
+        .then(res => console.log(res))
+        .then(res => setItem(res))
+        .then(console.log(item))
+    },[])
+
 }

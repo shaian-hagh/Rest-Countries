@@ -23,14 +23,14 @@ export const Home = () => {
             {
                 countries && countries.map((data, index) => {
                     return (
-                        <Link onClick={() => goToCountry(index)} to={`/CountryInfo/${index+1}`} className="more" key={index}>
+                        <Link onClick={() => goToCountry(index)} to={`/CountryInfo/${data.name.official}`} className="more" key={index}>
                             <Country data={data} />
                         </Link>
                     )
                 })
 			}
             {
-                info && <CountryInfo countries={countries} />
+                info && <CountryInfo info={info} />
             }
         </div>
     )
