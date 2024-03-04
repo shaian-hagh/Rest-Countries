@@ -7,6 +7,7 @@ export const CountryInfo = () => {
 
   const [item, setItem] = useState({})
   const [name , setName] = useState({})
+  const [flag , setFlag] = useState({})
   const params = useParams();
 
   useEffect(() => {
@@ -14,18 +15,24 @@ export const CountryInfo = () => {
     axios.get(`https://restcountries.com/v3.1/name/${params.id}`)
       .then(res =>{
         setItem(res.data[0])
+        setFlag(res.data[0].flags)
         setName(res.data[0].name)
       })    
       
     },[])
-      console.log(item);
+      // console.log(item);
       
     return(
-      <div className='country-info'>
-      <div className='info'>
+      <>
+      <div className='up-info'>
         <h1>{name.common}</h1>
+        <img src={flag.png} alt={flag.alt} className='img-info'/>
         <h1>{name.official}</h1>
       </div>
+      <div className='capital'>
+        <h3>capital : </h3>
+        <p>{item.capital}</p>
       </div>
+      </>
     )
 }

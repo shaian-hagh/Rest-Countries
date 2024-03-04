@@ -1,0 +1,14 @@
+.up-info{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #cccccc;
+    box-shadow: 0px 0px 20px rgba(120,120,120);
+}
+.img-info{
+    width: 320px;
+    height: 168px;
+}
