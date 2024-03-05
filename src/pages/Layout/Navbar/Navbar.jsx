@@ -1,13 +1,11 @@
 import React from 'react';
+import { SearchCountry } from './SearchCountry/SearchCountry';
 import './Navbar.css';
 
 export const Navbar = () => {
   return (
     <nav className='navbar'>
-      <form className='form-country'>
-        <input type="text" className="search" required placeholder="search"/>
-        <button type='submit' className="btn-search"><i className=" fa-solid fa-magnifying-glass"></i></button>
-      </form>
+      <SearchCountry />
       <select name="" id="">
         <option value="Europe">Europe</option>
         <option value="Asia">Asia</option>

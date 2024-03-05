@@ -17,11 +17,10 @@ export const CountryInfo = () => {
         setItem(res.data[0])
         setFlag(res.data[0].flags)
         setName(res.data[0].name)
-      })    
+      })
       
     },[])
-      // console.log(item);
-      
+    
     return(
       <>
       <div className='up-info'>
@@ -32,7 +31,7 @@ export const CountryInfo = () => {
       <div className='capital'>
         <h3>capital : </h3>
         <p>{item.capital}</p>
-      </div>
+      </div> 
       </>
-    )
+      )
 }

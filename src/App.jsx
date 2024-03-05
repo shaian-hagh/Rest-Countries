@@ -4,6 +4,7 @@ import { Home } from './pages/Home/Home';
 import { Footer } from './pages/Layout/Footer/Footer';
 import { NotFound } from './pages/NotFound/NotFound';
 import { CountryInfo } from './pages/Home/Country/CountryInfo';
+import { FindCountry } from './pages/FindCountry/FindCountry';
 import './App.css';
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/CountryInfo/:id' element={<CountryInfo />} />
+            <Route path='/FindCountry/:id' element={<FindCountry />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         <Footer />
