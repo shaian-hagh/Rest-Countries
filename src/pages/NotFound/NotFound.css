@@ -1,0 +1,39 @@
+.page-not-found{
+    background-color: white;
+    height:677px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number{
+    font-size: 300px;
+    background: -webkit-linear-gradient(#dd00ff, #021870);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error{
+    font-size: 80px;
+    background: -webkit-linear-gradient(#000000, #909090);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.btn-error{
+    background-color: red;
+    color:white;
+    padding: 15px 80px;
+    font-size: 30px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-error:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}

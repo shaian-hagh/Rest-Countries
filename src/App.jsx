@@ -16,7 +16,7 @@ export const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/CountryInfo/:id' element={<CountryInfo />} />
-            <Route path='/FindCountry/:id' element={<FindCountry />} />
+            <Route path='/search/:id' element={<FindCountry />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         <Footer />

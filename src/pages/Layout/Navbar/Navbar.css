@@ -1,82 +1,67 @@
 .navbar{
-    background-color: #0606d8;
-    width: 100vw;
+    background-color: #08081e;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
-    height: 100px;
+    height: 130px;
 }
 
-.form-country{
-    background-color: burlywood;
-    /* width: 500px; */
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.select-box{
+    position: relative;
+    left: 5em;
 }
 
-.search{
-    width: 70%;
-    height: 50%;
-    padding: 10px;
-    border: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    outline: none;
-    font-size: 20px;
-}
-
-.btn-search{
-    width: 40px;
+.select{
+    width: 15em;
+    font-size: 15px;
+    text-align: center;
+    background-color: darkcyan;
     color: white;
-    height: 50%;
+    padding: 0.7em 1.5em 0.7em 1.5em;
     border: none;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: green;
-    cursor: pointer;
     outline: none;
-}
-
-.continents{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    color: #fff;
+    appearance: none;
     cursor: pointer;
 }
 
-.your-location{
+.arrow{
+    width: 2em;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.arrow::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid white;
 }
 
 .btn-location{
-    width: 13vw;
-    cursor: pointer;
-    height: 4vh;
+    width: 14em;
+    background-color: rgba(255, 0, 0, 0.798);
+    padding: .5em;
     font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    background-color: red;
     border: none;
-    border-radius: 20px;
     outline: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 }
 
-.continent:hover{
-    color: red;
-}
-
-.your-location:active{
+.btn-location:active{
     transform: scale(.98);
 }
 
 .btn-location:hover{
     background-color: white;
-    color: red;
+    color: rgba(255, 0, 0, 0.798);
 }

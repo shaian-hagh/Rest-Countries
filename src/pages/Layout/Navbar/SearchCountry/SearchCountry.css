@@ -1,0 +1,23 @@
+.search{
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.btn-search{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

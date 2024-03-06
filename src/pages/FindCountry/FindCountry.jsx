@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
+import { CountryInfo } from '../Home/Country/CountryInfo';
 
 export const FindCountry = () => {
     const [data, setData] = useState({})
@@ -11,6 +12,10 @@ export const FindCountry = () => {
     },[])
 
   return (
-    <div>{params.id}</div>
+    <div>
+    
+      <CountryInfo />
+    
+    </div>
   )
 }

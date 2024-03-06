@@ -28,10 +28,11 @@ export const CountryInfo = () => {
         <img src={flag.png} alt={flag.alt} className='img-info'/>
         <h1>{name.official}</h1>
       </div>
+      
       <div className='capital'>
-        <h3>capital : </h3>
+        <h3>Capital : </h3>
         <p>{item.capital}</p>
-      </div> 
+      </div>
       </>
       )
 }
